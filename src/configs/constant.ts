@@ -1,13 +1,5 @@
-export const APP_NAME = 'Zappy BOT';
+export const APP_NAME = 'ChatGPT BOT';
 export const PREFIXES = [
-  'Zappy',
-  'ZappyBot',
-  'Zappy-Bot',
-  'Zappy Bot',
-  'zappy',
-  'zappybot',
-  'zappy-bot',
-  'zappy bot',
   'gpt',
   'GPT',
   'gpt3',
@@ -17,29 +9,10 @@ export const PREFIXES = [
   'bot',
   'Bot',
   'BOT',
-  'zappy,',
-  'Zappy,',
-  'ZAPPY,',
-  'zappy?',
-  'Zappy?',
-  'ZAPPY?',
-  'zappy!',
-];
+]; // Prefixes that when included in the user's input, the message will be sent to the model (GROUP CHATS ONLY)
 
-export const REMOVABLE_PREFIXES = [
-  'Zappy',
-  'ZappyBot',
-  'Zappy-Bot',
-  'Zappy Bot',
-  'zappy',
-  'zappybot',
-  'zappy-bot',
-  'zappy bot',
-  'zappy,',
-  'Zappy,',
-  'ZAPPY,',
-];
+export const REMOVABLE_PREFIXES = ['bot']; // Prefixes that should be removed from the user's input before message is sent to the model
 
 export const OPENAI_MODEL = 'gpt-3.5-turbo-1106';
 
-export const DEFAULT_SYSTEM_MESSAGE = `You are WhatsApp bot developed by Wordnox.com; Answer as concisely as possible.`;
+export const DEFAULT_SYSTEM_MESSAGE = `You are ChatGPT running as a WhatsApp bot developed by OpenAI; Answer as concisely as possible.`;
